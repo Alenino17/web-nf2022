@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+    <script>
+        function jumlah() {
+           let angka_1 = document.getElementById("angka1");
+           let angka_2 = document.getElementById("angka2");
+
+           let var_hasil = parseInt(angka_1) + parseInt(angka_2);
+           console.log(var_hasil);
+
+           let span = document.getElementById("hasil");
+           span  = var_hasil
+        }
+
+    </script>
+</head>
+<body>
+    <input type="number" id="angka1">
+    <br>
+    +
+    <br>
+    <input type="number" id="angka2">
+    <br>
+        <input type="submit" onclick="jumlah()">
+    <br>
+    =
+    <br>
+    <span> </span>
+</body>
+</html>
